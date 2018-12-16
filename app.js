@@ -15,7 +15,7 @@ app.set('view engine', 'html');
 app.use('/yy', express.static(__dirname + "/views/"));
 app.use('/h5', proxys);
 
-var server = http.createServer(app).listen(9934, function () {
+var server = http.createServer(app).listen(7003, function () {
     var host = server.address().address;
     var port = server.address().port;
     console.log('ranning at host', host);
