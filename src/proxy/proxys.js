@@ -6,7 +6,7 @@ const proxy = require('http-proxy-middleware');
 router.use('/', proxy({
     target: 'http://47.94.209.108:7002/',
     changeOrigin: true,
-    pathRewrite: { "^/api" : "" }
+    pathRewrite: { "^/h5" : "" }
 }));
 
 module.exports = router;
