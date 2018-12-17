@@ -13,7 +13,7 @@ app.set('views', './views'); // 指定视图所在的位置
 app.engine('html', ejs.__express);
 app.set('view engine', 'html');
 app.use('/yy', express.static(__dirname + "/views/"));
-app.use('/h5', proxys);
+app.use('/api', proxys);
 
 var server = http.createServer(app).listen(7003, function () {
     var host = server.address().address;
