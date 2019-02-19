@@ -7,6 +7,8 @@
 /yarn.lock
 /package-lock.json
 
+/views
+
 # production
 /dist
 
